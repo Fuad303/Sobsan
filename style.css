@@ -7,20 +7,29 @@
     transition: 0.3s all;
 }
 /* PreLoader */
-.js div#preloader {
-    position: fixed; 
-    left: 0; 
-    top: 0; 
-    z-index: 3000; 
-    width: 100%; 
-    height: 100%; 
-    overflow: visible; 
-    background: url('/images/icons/preloader.svg') no-repeat center center; 
-}
+.preloader {
+    align-items: center;
+    background: #FFF;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: opacity 0.2s linear;
+    width: 100%;
+    z-index: 9999;
+    opacity: 1;
+    transform: opacity 1s linear;
+  }
 /* End of PreLoader */
 :root{
     --red: #D6242B;
     --swiper-theme-color: #D6242B;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
 }
 li{
     list-style: none;

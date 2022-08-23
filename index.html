@@ -29,7 +29,9 @@
 </head>
 <body>
     <!-- PreLoader -->
-    <div id="preloader"></div>
+    <div class="preloader">
+        <img src="/images/icons/preloader.svg" alt="spinner">
+      </div>
     <!-- PreLoader -->
     <section class="nav">
         <div class="container">
@@ -725,6 +727,7 @@
   <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/images/icons/top.svg" alt=""></button>
   <!-- End of Top button -->
   <!-- ToolBar -->
+  
   <!-- ToolBar -->
 <!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
@@ -755,12 +758,11 @@
 <!-- Script -->
 <!-- PreLoader Jquery -->
 <script>
-jQuery(document).ready(function($) {  
-	$(window).load(function(){
-		$('#preloader').fadeOut('slow',function(){$(this).remove();});
-	});
-});
-// PreLoader Jquery
+    window.onload = function(){
+        //hide the preloader
+        document.querySelector(".preloader").style.display = "none";
+    }
 </script>
+<!-- PreLoader Jquery -->
 </body>
 </html>
