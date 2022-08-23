@@ -14,7 +14,7 @@ const navClose = () =>
 {
     navList.classList.remove('show');
     navBgOverlayEl.classList.remove('active');
-    document.body.style='visibility: visible, height: initial; width: 100%; overflow-x: hidden;';
+    document.body.style='visibility: hidden, height: initial; width: 100%; overflow-x: hidden;';
 }
 navIconEl.addEventListener('click', navOpen);
 navCloseEl.addEventListener('click', navClose); 

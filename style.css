@@ -322,7 +322,6 @@ li{
     .mobile-top-item a:hover{
         color: #D6242B;
     }
-
 	.nav__list {
 		z-index: 1000;
 		position: absolute;
@@ -629,7 +628,7 @@ li{
 }
 @media (max-width: 575px){
     .banner-slide-info{
-        padding: 30px 0;
+        padding: 30px 20px;
         margin: 0 auto;
     }
 }
@@ -1062,3 +1061,96 @@ footer{
   #myBtn:hover{
     animation: call 1.5s ease infinite;
 }
+
+/* ToolBar */
+.toolbar-wrapper{
+    position: fixed;
+    top: 240px;
+    right: 0;
+    z-index: 1000;
+}
+.toolbar-item{
+    position: absolute;
+    width: max-content;
+    right: 0;
+    margin-bottom: 15px;
+    padding: 19px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    border-radius:  10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius:  10px;
+    -ms-border-radius:  10px;
+    -o-border-radius:  10px;
+}
+.toolbar-item:nth-child(2){
+    margin-top: 70px;
+}
+.toolbar-item:nth-child(3){
+    margin-top: 140px;
+}
+.toolbar-item a{
+    text-decoration: none;
+    color: #323232;
+    font-weight: 600;
+}
+.toolbar-item a:hover{
+    color: #ed3237;
+}
+.toolbar-call{
+    display: flex;
+    background-color: #ed3237;
+    color: #FFFFFF;
+    padding: 8px 15px 5px 15px;
+    margin-bottom: 15px;
+    border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    -moz-border-radius: 10px 0 0 10px;
+    -ms-border-radius: 10px 0 0 10px;
+    -o-border-radius: 10px 0 0 10px;
+    animation: call 1.5s ease infinite;
+}
+.toolbar-call img{
+    margin-right: 10px;
+    width: 25px;
+    padding-top: 5px;
+}
+.toolbar-call p{
+    margin-bottom: 0;
+    font-size: 12px;
+}
+.toolbar-call span{
+    font-size: 15px;
+    font-weight: 600;
+}
+.notification {
+    color: white;
+    position: relative;
+    display: inline-block;
+  }
+  .notification .badge {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+  }
+  @media (max-width: 575px){
+    .toolbar-wrapper{
+        top: 200px;
+    }
+    .toolbar-call{
+        display: none;
+    }
+    .toolbar-item{
+        padding: 11px;
+    }
+    .toolbar-item:nth-child(2){
+        margin-top: 55px;
+    }
+    .toolbar-item:nth-child(3){
+        margin-top: 110px;
+    }
+  }
