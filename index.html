@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="https://sobsan.com/assets/img/icons/favicon3.png" />
     <!-- CSS -->
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/pages.css">
     <!-- CSS -->
     <!-- Fancy Box --> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
@@ -46,12 +47,12 @@
                             </div>
                         </a></li>
                         <li><a href="/HTML/kataloqlar.html">Kataloqlar</a></li>
-                        <li><a href="/HTML/media.html">Media
+                        <li><a href="#">Media
                             <div class="dropdown-wrapper">
                                 <ul>
                                     <li><a href="/HTML/aksiyalar.html">Aksiyalar</a></li>
                                     <li><a href="/HTML/xeberler.html">Xəbərlər</a></li>
-                                    <li><a href="/HTML/elaqe.html">Əlaqə</a></li>
+                                    <li><a href="/HTML/qalereya.html">Qalereya</a></li>
                                 </ul>
                             </div>
                             </a></li>
@@ -73,14 +74,25 @@
                         <span><img onclick="searchFunction()" src="/images/icons/search.svg" alt="">
                         <input id="search" class="search" type="search" placeholder="Axtar...">
                         </span>
-                        <span>Az <i class="fa-solid fa-angle-down"></i></span>
+                        <span>
+                            <!-- Az <i class="fa-solid fa-angle-down"></i> -->
+                            <details>
+                                <summary> <div> AZ</div></summary>
+                                <p>
+                                    EN
+                                </p>
+                                <p>
+                                    RU
+                                </p>
+                            </details>
+                        </span>
                         <a class="signin" href="/HTML/signin.html"><img style="margin-right: 5px;" src="/images/icons/signin.svg" alt="">Giriş</a>
                     </div>
                 </div>
             </div>
             <div class="header-mid d-flex">
                 <div class="nav-logo">
-                    <a href="index.html"><img src="/images/logo.png" alt=""></a>
+                    <a href="/index.html"><img src="/images/logo.png" alt=""></a>
                 </div>
                 <div class="mid-list">
                     <ul class="d-flex">
@@ -295,12 +307,12 @@
                                 </div>
                             </a></li>
                             <li><a href="/HTML/kataloqlar.html">Kataloqlar</a></li>
-                            <li><a href="/HTML/media.html">Media <i class="bottom-angle fa fa-angle-right"></i>
+                            <li><a href="#">Media <i class="bottom-angle fa fa-angle-right"></i>
                                 <div class="mobile-dropdown-wrapper">
                                     <ul>
                                         <li><a href="/HTML/aksiyalar.html">Aksiyalar</a></li>
                                         <li><a href="/HTML/xeberler.html">Xəbərlər</a></li>
-                                        <li><a href="/HTML/elaqe.html">Əlaqə</a></li>
+                                        <li><a href="/HTML/qalereya.html">Qalereya</a></li>
                                     </ul>
                                 </div>
                                 </a></li>
@@ -728,13 +740,14 @@
   <!-- End of Top button -->
   <!-- ToolBar -->
      <div class="toolbar-wrapper">
+        <a href="tel:*4545">
         <div class="toolbar-call">
-                <div><img src="/images/icons/call.svg" alt=""></div>
-                <span>
-                    *4545
-                    <p>Qaynar xətt</p>
-                </span>
-        </div>
+                    <div><img src="/images/icons/call.svg" alt=""></div>
+                    <span>
+                        *4545
+                        <p>Qaynar xətt</p>
+                    </span>
+        </div></a>
         <div class="toolbar-item">
             <a class="notification" href="/HTML/wish-list.html">
                 <img src="/images/icons/toolbar-wishlist.svg" alt="">

@@ -32,3 +32,33 @@ var mainSwiper = new Swiper(".mainSwiper", {
 });
 
 var bannerSwiper = new Swiper(".bannerSwiper", {});
+
+var aboutSwiper = new Swiper(".aboutSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    100: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    575: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 40
+    }
+  }
+});

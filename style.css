@@ -31,6 +31,9 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+body a{
+    text-decoration: none;
+}
 li{
     list-style: none;
 }
@@ -102,6 +105,7 @@ li{
 }
 .header-pages a,
 .header-pages span{
+    position: relative;
     border: 1px solid #ccc;
     border-top: none;
     border-right: none;
@@ -110,6 +114,38 @@ li{
     font-size: 14px;
     text-decoration: none;
     color: black;
+}
+details{
+    display: inline;
+    position: relative;
+}
+details summary{
+    text-decoration: none;
+    color: #ed3237;
+}
+details summary div{
+    display: inline;
+    color: #323232;
+}
+details p{
+    z-index: 1000;
+    position: absolute;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    border-radius: 6px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+}
+details p:hover{
+    background-color: #ed3237;
+    color: #FFFFFF;
+}
+details p:first-of-type{
+    margin-top: 15px;
+    border-bottom: none;
+}
+details p:last-of-type{
+    border-top: none;
+    margin-top: 48px;
 }
 .header-pages img:hover
 {
@@ -213,6 +249,9 @@ li{
 }
 .inline-mid-list li:hover{
     color: #D6242B;
+}
+.signin:hover{
+    color: #323232;
 }
 @media(max-width: 1200px){
     .header-top{
@@ -1082,6 +1121,7 @@ footer{
     -moz-border-radius:  10px;
     -ms-border-radius:  10px;
     -o-border-radius:  10px;
+    box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.1);
 }
 .toolbar-item:nth-child(2){
     margin-top: 70px;

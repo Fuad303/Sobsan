@@ -36,4 +36,3 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 // End of Top Function
-
