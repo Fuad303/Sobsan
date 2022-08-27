@@ -6,6 +6,11 @@
     font-family: 'Montserrat', sans-serif;
     transition: 0.3s all;
 }
+*::selection
+{
+    background-color: #ed3237;
+    color: #FFFFFF;
+}
 /* PreLoader */
 .preloader {
     align-items: center;
