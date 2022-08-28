@@ -307,6 +307,7 @@ details p:last-of-type{
 }
 .mobileNav{
     display: none;
+    visibility: hidden;
 }
 @media (max-width: 991px) {
 	.nav {
@@ -820,7 +821,7 @@ details p:last-of-type{
 }
 .cart-bottom-wrapper{
     width: 100%;
-}
+} 
 .cart-bottom .wishList{
     padding: 12px 5px;
 }  

@@ -36,3 +36,32 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 // End of Top Function
+// Search Function
+function searchFunction(){
+  let x = document.getElementById('search')
+
+  if (x.style.display === 'block'){
+      x.style.display = 'none';
+  }
+  else{
+      x.style.display = 'block';
+  }
+}   
+
+
+/* Increment and decrement functions */
+function increment() {
+  document.getElementById('demoInput').stepUp();
+}
+function decrement() {
+  document.getElementById('demoInput').stepDown();
+} 
+/* End of Increment and decrement functions */
+
+
+  // All item remove function
+  function  removeFunction() {
+    const element = document.getElementById("cart");
+    element.remove();
+  }
+// End of All item remove function
