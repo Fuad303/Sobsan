@@ -316,6 +316,7 @@ details p:last-of-type{
 	}
     .mobileNav{
         display: block;
+        visibility: visible;
     }
 	.nav__icon {
 		display: block;
