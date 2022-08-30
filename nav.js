@@ -9,7 +9,7 @@ const navOpen = () =>
     navList.classList.add('show');
     navBgOverlayEl.classList.add('active');
     document.body.style='visibility: visible, height: 100vh; width: 100vw; overflow: hidden;';
-}
+  }
 const navClose = () =>
 {
     navList.classList.remove('show');
