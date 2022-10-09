@@ -336,11 +336,23 @@
         <div class="ustalar-wrapper d-flex row">
             <div class="ustalar-left col-md-4 col-12">
                 <div class="signin-wrapper d-flex col-12">
-                    <a id="button-active" class="col-6"><button>Giriş</button></a>
-                    <a class="col-6" href="/HTML/ustalar-qeydiyyat.html"><button>Qeydiyyat</button></a>
+                    <a href="/HTML/ustalar-birliyi.html" class="col-6"><button>Giriş</button></a>
+                    <a id="button-active" class="col-6"><button>Qeydiyyat</button></a>
                 </div>
                 <div class="phone-form">
                     <form class="col-12" action="">
+                        <p>Ad*</p>
+                        <div>
+                          <input class=" col-12" required placeholder="Ad" type="text">
+                        </div>
+                        <p>Soyad*</p>
+                        <div>
+                          <input class=" col-12" required placeholder="Soyad" type="text">
+                        </div>
+                        <p>Ata adı*</p>
+                        <div>
+                          <input class=" col-12" required placeholder="Ata adı" type="text">
+                        </div>
                         <p>Telefon*</p>
                         <input class="disabled phone-input" type="text" disabled placeholder="+994">
                         <select class="phone-input" name="" id="">
@@ -352,15 +364,35 @@
                             <option value="">77</option>
                         </select>
                         <input type="number" class="phone-number" required placeholder="XXXXXXX">
+                        <p>E-poçt*</p>
+                        <div>
+                          <input class=" col-12" required placeholder="E-poçt" type="email">
+                        </div>
+                        <p>Doğum tarixi*</p>
+                        <div>
+                          <input class=" col-12" required type="date">
+                        </div>
+                        <p>Ailə vəziyyəti*</p>
+                        <div>
+                          <select name="" id="">
+                            <option value="Subay">Subay</option>
+                            <option value="Evli">Evli</option>
+                          </select>
+                        </div>
+                        <p>Kateqoriya*</p>
+                        <div>
+                          <select name="" id="">
+                            <option>Dekorativ boya ustası</option>
+                            <option>Malyar</option>
+                            <option value="Kafel / Keramika"></option>
+                          </select>
+                        </div>
+                        <p>Ünvan</p>
+                        <div>
+                          <input class=" col-12" placeholder="Ünvan" type="text">
+                        </div>
                         <div class="form-group">
-                            <label class="col-md-4 control-label"></label>
-                            <p>Şifrə*</p>
-                            <div>
-                              <input class=" col-12 password-input" id="password-field" required placeholder="*******" type="password"  name="password">
-                              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                            </div>
-                            <a class="forget" href="/HTML/sifremi-unutdum.html">Şifrəmi unutdum</a>
-                            <button class="ustalar-button">Giriş</button>
+                            <button class="ustalar-button">Qeydiyyat</button>
                     </form>
                 </div>
             </div>

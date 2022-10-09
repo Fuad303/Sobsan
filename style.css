@@ -27,6 +27,14 @@
     opacity: 1;
     transform: opacity 1s linear;
   }
+  .preloader img{
+    width: 12%;
+  }
+  @media (max-width: 991px){
+    .preloader img{
+        width: 30%;
+    }
+  }
 /* End of PreLoader */
 :root{
     --red: #D6242B;
@@ -155,7 +163,7 @@ details p:last-of-type{
 .header-pages img:hover
 {
     width: 20px;
-} 
+}
 .header-pages i{
     color: var(--red);
     cursor: pointer;
@@ -325,10 +333,12 @@ details p:last-of-type{
         z-index: 1000;
         top: 10px;
         position: absolute;
+        cursor: pointer;
 	}
 	.nav__icon svg,
 	.nav__close svg {
 		pointer-events: none;
+        cursor: pointer;
 		height: 30px;
 		width: 30px;
 	}
@@ -553,6 +563,11 @@ details p:last-of-type{
     }
     .call-animation{
         margin-left: 0;
+    }
+}
+@media (max-width: 417px){
+    .mobile-top-item{
+        margin-left: 5px;
     }
 }
 /* End Nav Styles */

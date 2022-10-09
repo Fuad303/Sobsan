@@ -813,3 +813,93 @@ tbody{
     gap: 15px;
   }
 }
+/* Ustalar Birliyi */
+.ustalar{
+  margin: 60px 0;
+}
+.field-icon {
+  float: right;
+  right: 10px;
+  margin-top: -45px;
+  position: relative;
+  z-index: 2;
+}
+.ustalar-left .signin-wrapper a button{
+  width: 100%;
+  border: none;
+  padding: 12px 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  font-weight: bold;
+  border: 1px solid #ccc;
+}
+#button-active button{
+  background-color: #ed3237;
+  color: #FFFFFF;
+  border: none;
+}
+.phone-form{
+  margin-top: 30px;
+}
+.phone-form p{
+  color: #575757;
+  font-size: 13px;
+}
+.phone-input{
+  width: 70px;
+  padding: 10px;
+}
+.phone-form input{
+  border: 1px solid #ccc;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+  outline: none;
+  margin-bottom: 15px;
+  padding: 12px;
+}
+.phone-form input[type=number]{
+  background-color: transparent;
+  border-radius: none;
+  width: auto;
+  text-align: left;
+}
+.disabled{
+  background-color: #e9e9ed;
+}
+.forget{
+  color: #ed3237;
+  text-decoration: underline;
+  font-size: 13px;
+}
+.ustalar-button{
+  display: block;
+  background-color: #FFFFFF;
+  border: 1px solid #ed3237;
+  color: #ed3237;
+  width: 50%;
+  margin-top: 50px;
+  padding: 13px 0;
+  font-weight: bold;
+  font-size: 13px;
+}
+.right-img,
+.right-img img{
+  width: 100%;
+  border-radius: 15px;
+}
+.right-text h4{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.right-text p{
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+}
+@media (max-width: 991px){
+  .ustalar-right{
+    padding-top: 35px;
+  }
+}
