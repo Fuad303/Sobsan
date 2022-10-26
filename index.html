@@ -29,6 +29,23 @@
     <title>Sobsan Boya - Azərbaycanın ilk lak-boya istehsalı müəssisəsi</title>
 </head>
 <body>
+    <style>
+        .header-mid{
+            position: fixed;
+            top: 40px;
+            width: 100%;
+            left: 0;
+            padding: 0 140px;
+            z-index: 10;
+            background-color: #FFFFFF;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 991px){
+            .header-mid{
+                background-color: transparent;
+            }
+        }
+    </style>
     <!-- PreLoader -->
     <div class="preloader">
         <img src="/images/icons/preloader.svg" alt="spinner">
@@ -67,7 +84,7 @@
                         <a href="https://www.instagram.com/sobsan_paints/"><i class="fa fa-instagram"></i></a>
                         <a href="https://www.youtube.com/channel/UCXaXh-dXGaMp7E5_MBv3hmA"><i class="fa fa-youtube"></i></a>
                     </div>
-                    <div class="header-pages">
+                    <div id="header-pages" class="header-pages">
                         <a href="/HTML/compare.html"><img src="/images/icons/compare.svg" alt=""></a>
                         <a href="/HTML/wish-list.html"><img src="/images/icons/heart.png" alt=""></a>
                         <a href="/HTML/cart.html"><img src="/images/icons/cart.svg" alt=""></a>
@@ -90,9 +107,9 @@
                     </div>
                 </div>
             </div>
-            <div class="header-mid d-flex">
+            <div id="header-mid" class="header-mid d-flex">
                 <div class="nav-logo">
-                    <a href="/index.html"><img src="/images/logo.png" alt=""></a>
+                    <a href="/index.html"><img id="nav-logo-img" src="/images/logo.png" alt=""></a>
                 </div>
                 <div class="mid-list">
                     <ul class="d-flex">
@@ -202,7 +219,7 @@
                             </div>
                         </li>
                         <li><a href="/HTML/diger.html">Digər</a></li>
-                        <li><a href="/HTML/ustalar-birliyi.html">
+                        <li id="ustalar"><a href="/HTML/ustalar-birliyi.html">
                             <figure class="swing"><img src="/images/usta_logo.png" alt=""></figure></a>
                         </li>
                     </ul>
@@ -674,13 +691,13 @@
     <div class="container">
         <div class="swiper partnerSwiper">
             <div class="swiper-wrapper partner-wrapper">
-              <div class="swiper-slide"><img src="/images/partner-1.png" alt=""></div>
+              <div class="swiper-slide technol"><img src="/images/partner-1.png" alt=""></div>
               <div class="swiper-slide"><img src="/images/partner-2.png" alt=""></div>
               <div class="swiper-slide"><img src="/images/partner-3.png" alt=""></div>
-              <div class="swiper-slide"><img src="/images/partner-1.png" alt=""></div>
+              <div class="swiper-slide technol"><img src="/images/partner-1.png" alt=""></div>
               <div class="swiper-slide"><img src="/images/partner-2.png" alt=""></div>
               <div class="swiper-slide"><img src="/images/partner-3.png" alt=""></div>
-              <div class="swiper-slide"><img src="/images/partner-1.png" alt=""></div>
+              <div class="swiper-slide technol"><img src="/images/partner-1.png" alt=""></div>
               <div class="swiper-slide"><img src="/images/partner-2.png" alt=""></div>
               <div class="swiper-slide"><img src="/images/partner-3.png" alt=""></div>
             </div>
@@ -808,12 +825,32 @@
 <script src="/swiper-slide.js"></script>
 <script src="/nav.js"></script>
 <script src="/script.js"></script>
+<script src="/top.js"></script>
 <!-- Script -->
 <!-- PreLoader Jquery -->
 <script>
     window.onload = function(){
         //hide the preloader
         document.querySelector(".preloader").style.display = "none";
+    }
+    
+    // Scrool Function
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("header-mid").style.display = "fixed";
+        document.getElementById("header-mid").style.boxShadow = "2px 2px 2px 2px rgba(0, 0, 0, 0.1)";
+        document.getElementById("header-mid").style.height = "100px";
+        document.getElementById("nav-logo-img").style.width = "60px";
+        document.getElementById("ustalar").style.display = "none";
+        document.getElementById("header-mid").style.top = "0";
+    } else {
+        document.getElementById("header-mid").style.height = "max-content";
+        document.getElementById("header-mid").style.boxShadow = "none";
+        document.getElementById("ustalar").style.display = "block";
+        document.getElementById("header-mid").style.top = "40px";
+    }
     }
 </script>
 <!-- PreLoader Jquery -->

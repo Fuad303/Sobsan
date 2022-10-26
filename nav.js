@@ -20,22 +20,7 @@ navIconEl.addEventListener('click', navOpen);
 navCloseEl.addEventListener('click', navClose); 
 navBgOverlayEl.addEventListener('click', navClose); 
 
-// Top Function  
-var mybutton = document.getElementById("myBtn");
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-// End of Top Function
 // Search Function
 function searchFunction(){
   let x = document.getElementById('search')
@@ -65,3 +50,21 @@ function decrement() {
     element.remove();
   }
 // End of All item remove function
+
+
+// Top Function  
+let mybutton = document.getElementById("myBtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+} else {
+    mybutton.style.display = "none";
+}
+}
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+// End of Top Function
