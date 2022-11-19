@@ -43,6 +43,7 @@
         @media (max-width: 991px){
             .header-mid{
                 background-color: transparent;
+                box-shadow: none;
             }
         }
     </style>
@@ -756,7 +757,7 @@
   <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/images/icons/top.svg" alt=""></button>
   <!-- End of Top button -->
   <!-- ToolBar -->
-     <div class="toolbar-wrapper">
+    <div class="toolbar-wrapper">
         <a href="tel:*4545">
         <div class="toolbar-call">
                     <div><img src="/images/icons/call.svg" alt=""></div>
@@ -783,11 +784,11 @@
                 <span class="badge">0</span>
             </a>
         </div>
-     </div>
+    </div>
   <!-- ToolBar -->
   <!-- Live Chat -->
   <!--Start of Tawk.to Script-->
-<script type="text/javascript">
+    <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -840,7 +841,7 @@
     function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("header-mid").style.display = "fixed";
-        document.getElementById("header-mid").style.boxShadow = "2px 2px 2px 2px rgba(0, 0, 0, 0.1)";
+        document.getElementById("header-mid").style.boxShadow = "0 2px 2px 2px rgba(0, 0, 0, 0.1)";
         document.getElementById("header-mid").style.height = "100px";
         document.getElementById("nav-logo-img").style.width = "60px";
         document.getElementById("ustalar").style.display = "none";
@@ -849,7 +850,7 @@
         document.getElementById("header-mid").style.height = "max-content";
         document.getElementById("header-mid").style.boxShadow = "none";
         document.getElementById("ustalar").style.display = "block";
-        document.getElementById("header-mid").style.top = "40px";
+        document.getElementById("header-mid").style.top = " 50px";
     }
     }
 </script>
