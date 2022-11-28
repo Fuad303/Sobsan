@@ -26,6 +26,10 @@
     <link rel="stylesheet" href="/owl.carousel.min.css">
     <link rel="stylesheet" href="/owl.theme.default.min.css">
     <!-- Owl Carousel -->    
+    <!-- IonIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- IonIcons -->
     <title>Sobsan Boya - Azərbaycanın ilk lak-boya istehsalı müəssisəsi</title>
 </head>
 <body>
@@ -63,11 +67,11 @@
                 </div>
                 <div class="header-right d-flex col-xl-6 col-lg-12">
                     <div class="header-social">
-                        <a href="https://www.facebook.com/sobsanofficial"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/sobsan_paints/"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/channel/UCXaXh-dXGaMp7E5_MBv3hmA"><i class="fa fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/sobsanofficial"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/sobsan_paints/"><ion-icon  name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.youtube.com/channel/UCXaXh-dXGaMp7E5_MBv3hmA"><ion-icon name="logo-youtube"></ion-icon></a>
                     </div>
-                    <div class="header-pages">
+                    <div id="header-pages" class="header-pages">
                         <a href="/HTML/compare.html"><img src="/images/icons/compare.svg" alt=""></a>
                         <a href="/HTML/wish-list.html"><img src="/images/icons/heart.png" alt=""></a>
                         <a href="/HTML/cart.html"><img src="/images/icons/cart.svg" alt=""></a>
@@ -76,23 +80,21 @@
                         </span>
                         <span>
                             <!-- Az <i class="fa-solid fa-angle-down"></i> -->
-                            <details>
-                                <summary> <div> AZ</div></summary>
-                                <p>
-                                    EN
-                                </p>
-                                <p>
-                                    RU
-                                </p>
-                            </details>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Az <ion-icon name="chevron-down-outline"></ion-icon></button>
+                                <div id="myDropdown" class="dropdown-content">
+                                  <a href="">En</a>
+                                  <a href="">Ru</a>
+                                </div>
+                              </div>
                         </span>
                         <a class="signin" href="/HTML/signin.html"><img style="margin-right: 5px;" src="/images/icons/signin.svg" alt="">Giriş</a>
                     </div>
                 </div>
             </div>
-            <div class="header-mid d-flex">
+            <div id="header-mid" class="header-mid d-flex">
                 <div class="nav-logo">
-                    <a href="/index.html"><img src="/images/logo.png" alt=""></a>
+                    <a href="/index.html"><img id="nav-logo-img" src="/images/nav-logo.svg" alt=""></a>
                 </div>
                 <div class="mid-list">
                     <ul class="d-flex">
@@ -108,7 +110,7 @@
                                 </ul>
                                 <ul>
                                     <h6>Solvent əsaslı boyalar</h6>
-                                    <li class="inline-mid-item">Sintetik boyalar <i class="fa fa-angle-right"></i>
+                                    <li class="inline-mid-item">Sintetik boyalar <ion-icon name="chevron-forward-outline"></ion-icon></i>
                                         <ul class="inline-mid-list"> 
                                             <li>Astarlar</li>
                                             <li>Son qat</li>
@@ -116,7 +118,7 @@
                                             <li>Tinerlər</li>
                                         </ul>
                                     </li>
-                                    <li class="inline-mid-item">Sellülozik boyalar <i class="fa fa-angle-right"></i>
+                                    <li class="inline-mid-item">Sellülozik boyalar <ion-icon name="chevron-forward-outline"></ion-icon></i>
                                         <ul class="inline-mid-list">
                                             <li>Astarlar</li>
                                             <li>Son qat</li>
@@ -124,14 +126,14 @@
                                             <li>Tinerlər</li>
                                         </ul>
                                     </li>
-                                    <li class="inline-mid-item">Poliuretan boyalar <i class="fa fa-angle-right"></i>
+                                    <li class="inline-mid-item">Poliuretan boyalar <ion-icon name="chevron-forward-outline"></ion-icon></i>
                                         <ul class="inline-mid-list">
                                             <li>Astarlar</li>
                                             <li>Son qat</li>
                                             <li>Tinerlər</li>
                                         </ul>
                                     </li>
-                                    <li class="inline-mid-item">Epoksi boyalar <i class="fa fa-angle-right"></i>
+                                    <li class="inline-mid-item">Epoksi boyalar <ion-icon name="chevron-forward-outline"></ion-icon></i>
                                         <ul class="inline-mid-list">
                                             <li>Astarlar</li>
                                             <li>Son qat</li>
@@ -202,7 +204,7 @@
                             </div>
                         </li>
                         <li><a href="/HTML/diger.html">Digər</a></li>
-                        <li><a href="/HTML/ustalar-birliyi.html">
+                        <li id="ustalar"><a href="/HTML/ustalar-birliyi.html">
                             <figure class="swing"><img src="/images/usta_logo.png" alt=""></figure></a>
                         </li>
                     </ul>
@@ -763,53 +765,53 @@
             </div>
         </div>
     </section>
-  <footer>
-    <div class="container">
-        <div class="footer-wrapper d-flex col-12">
-            <div class="footer-logo col-xl-3 col-12">
-                <a href="/index.html"><img style="margin-bottom: 30px;" src="/images/logo.png" alt=""></a>
-                <div class="header-social footer-social">
-                    <a href="https://www.facebook.com/sobsanofficial"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/sobsan_paints/"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCXaXh-dXGaMp7E5_MBv3hmA"><i class="fa fa-youtube"></i></a>
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper d-flex col-12">
+                <div class="footer-logo col-xl-3 col-12">
+                    <a href="/index.html"><img style="margin-bottom: 30px;" src="/images/logo.png" alt=""></a>
+                    <div class="header-social footer-social">
+                        <a href="https://www.facebook.com/sobsanofficial"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/sobsan_paints/"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.youtube.com/channel/UCXaXh-dXGaMp7E5_MBv3hmA"><ion-icon name="logo-youtube"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="footer-list d-flex col-xl-9 col-12">
+                      <ul class="col-md-3 col-12">
+                        <h6>Menyular</h6>
+                        <li><a href="/HTML/haqqimizda.html">Haqqımızda</a></li>
+                        <li><a href="/HTML/kataloqlar.html">Kataloqlar</a></li>
+                        <li><a href="/HTML/aksiyalar.html">Aksiyalar</a></li>
+                        <li><a href="/HTML/xeberler.html">Xəbərlər</a></li>
+                        <li><a href="/HTML/qalereya.html">Qalereya</a></li>
+                        <li><a href="/HTML/odenis-ve-catdirilma.html">Ödəniş və Çatdırılma</a></li>
+                        <li><a href="/HTML/zemanet-sertleri.html">Zəmanət şərtləri</a></li>
+                        <li><a href="/HTML/bizimle-elaqe.html">Bizimlə əlaqə</a></li>
+                      </ul>
+                      <ul class="col-md-3 col-12">
+                        <h6>Kateqoriyalar</h6>
+                        <li><a href="/HTML/mehsullar.html">Məhsullar</a></li>
+                        <li><a href="/HTML/dekorativ-boyalar.html">Dekorativ Boyalar</a></li>
+                        <li><a href="/HTML/senaye-boyalari.html">Sənaye Boyaları</a></li>
+                        <li><a href="/HTML/insaat-mehsullari.html">İnşaat Məhsulları</a></li>
+                        <li><a href="/HTML/boyaci-aletleri.html">Boyaçı Alətləri</a></li>
+                        <li><a href="/HTML/diger.html">Digər</a></li>
+                      </ul>
+                      <ul class="col-md-3 col-12">
+                        <h6>Ünvanlarımız</h6>
+                        <li><a href="/HTML/elaqe.html">Baş ofis</a></li>
+                        <li><a href="/HTML/elaqe.html">Fabrik ünvanı</a></li>
+                      </ul>
+                      <ul class="col-md-3 col-12">
+                        <h6>Faydalı linklər</h6>
+                        <li><a href="#">Tez-tez soruşulanlar</a></li>
+                        <li><a href="#">Karyera</a></li>
+                        <li><a href="#">Xidmət şəbəkəsi</a></li>
+                      </ul>
                 </div>
             </div>
-            <div class="footer-list d-flex col-xl-9 col-12">
-                  <ul class="col-md-3 col-12">
-                    <h6>Menyular</h6>
-                    <li><a href="/HTML/haqqimizda.html">Haqqımızda</a></li>
-                    <li><a href="/HTML/kataloqlar.html">Kataloqlar</a></li>
-                    <li><a href="/HTML/aksiyalar.html">Aksiyalar</a></li>
-                    <li><a href="/HTML/xeberler.html">Xəbərlər</a></li>
-                    <li><a href="/HTML/qalereya.html">Qalereya</a></li>
-                    <li><a href="/HTML/odenis-ve-catdirilma.html">Ödəniş və Çatdırılma</a></li>
-                    <li><a href="/HTML/zemanet-sertleri.html">Zəmanət şərtləri</a></li>
-                    <li><a href="/HTML/bizimle-elaqe.html">Bizimlə əlaqə</a></li>
-                  </ul>
-                  <ul class="col-md-3 col-12">
-                    <h6>Kateqoriyalar</h6>
-                    <li><a href="/HTML/mehsullar.html">Məhsullar</a></li>
-                    <li><a href="/HTML/dekorativ-boyalar.html">Dekorativ Boyalar</a></li>
-                    <li><a href="/HTML/senaye-boyalari.html">Sənaye Boyaları</a></li>
-                    <li><a href="/HTML/insaat-mehsullari.html">İnşaat Məhsulları</a></li>
-                    <li><a href="/HTML/boyaci-aletleri.html">Boyaçı Alətləri</a></li>
-                    <li><a href="/HTML/diger.html">Digər</a></li>
-                  </ul>
-                  <ul class="col-md-3 col-12">
-                    <h6>Ünvanlarımız</h6>
-                    <li><a href="/HTML/elaqe.html">Baş ofis</a></li>
-                    <li><a href="/HTML/elaqe.html">Fabrik ünvanı</a></li>
-                  </ul>
-                  <ul class="col-md-3 col-12">
-                    <h6>Faydalı linklər</h6>
-                    <li><a href="#">Tez-tez soruşulanlar</a></li>
-                    <li><a href="#">Karyera</a></li>
-                    <li><a href="#">Xidmət şəbəkəsi</a></li>
-                  </ul>
-            </div>
         </div>
-    </div>
-  </footer>
+      </footer>
   <!-- Top button -->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="/images/icons/top.svg" alt=""></button>
   <!-- End of Top button -->
