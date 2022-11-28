@@ -68,16 +68,20 @@ li{
 }
 .header-top{
     display: flex;
-    padding: 12px 0;
+    padding: 12px 0 5px 0;
+}
+.header-left ul{
+    padding-left: 0;
 }
 .header-left{
     justify-content: flex-start;
 }
 .header-left a{
+    white-space: nowrap;
     text-decoration: none;
     color: #474747;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
     position: relative;
 }
 .header-left ul{
@@ -85,13 +89,14 @@ li{
 }
 .header-left ul li a::after
 {
-    position: absolute;
-    content: '';
-    width: 0%;
-    height: 1px;
-    background: #ca3d26;
     display: block;
-    transition: 0.5s;
+    content: "";
+    width: 0%;
+    margin: auto;
+    height: 1px;
+    background-color: #ed3237;
+    left: 0;
+    transition: 0.4s;
 }
 .header-left ul li a:hover::after
 {
@@ -116,7 +121,7 @@ li{
     top: 0;
     z-index: 19;
     background-color: #FFFFFF;
-    margin-top: 24px;    
+    margin-top: 28px;    
     box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.1);
 }
 .header-left ul li .dropdown-wrapper li{
@@ -212,6 +217,9 @@ details p:last-of-type{
     100% { transform: rotate(-3deg); }
 }
 /* Swing */
+.nav *{
+    font-family:  "Nunito", sans-serif !important;
+}
 .nav-logo a img{
     width: 70px;
 }
@@ -220,9 +228,10 @@ details p:last-of-type{
     margin-top: 40px;
 }
 .mid-list a {
+    word-spacing: nowrap;
     text-decoration: none;
-    color: #323232;
-    font-weight: 500;
+    color: black;
+    font-weight: bolder;
     font-size: 18px;
 }
 .mid-list a:hover{
@@ -599,6 +608,14 @@ details p:last-of-type{
 }
 /* End Nav Styles */
 /* Swiper Slider CSS */
+.mainSwiper{
+    margin-top: 115px;
+}
+@media (max-width: 991px){
+    .mainSwiper{
+        margin-top: 10px;
+    }
+}
 .mainSwiper .swiper-wrapper{
     margin-bottom: 40px;
 }

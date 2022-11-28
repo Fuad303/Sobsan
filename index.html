@@ -29,24 +29,6 @@
     <title>Sobsan Boya - Azərbaycanın ilk lak-boya istehsalı müəssisəsi</title>
 </head>
 <body>
-    <style>
-        .header-mid{
-            position: fixed;
-            top: 40px;
-            width: 100%;
-            left: 0;
-            padding: 0 140px;
-            z-index: 10;
-            background-color: #FFFFFF;
-            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-        }
-        @media (max-width: 991px){
-            .header-mid{
-                background-color: transparent;
-                box-shadow: none;
-            }
-        }
-    </style>
     <!-- PreLoader -->
     <div class="preloader">
         <img src="/images/icons/preloader.svg" alt="spinner">
@@ -95,7 +77,7 @@
                         <span>
                             <!-- Az <i class="fa-solid fa-angle-down"></i> -->
                             <details>
-                                <summary> <div> AZ</div></summary>
+                                <summary> <div> Az</div></summary>
                                 <p>
                                     EN
                                 </p>
@@ -110,7 +92,7 @@
             </div>
             <div id="header-mid" class="header-mid d-flex">
                 <div class="nav-logo">
-                    <a href="/index.html"><img id="nav-logo-img" src="/images/logo.png" alt=""></a>
+                    <a href="/index.html"><img id="nav-logo-img" src="/images/nav-logo.svg" alt=""></a>
                 </div>
                 <div class="mid-list">
                     <ul class="d-flex">
@@ -833,25 +815,6 @@
     window.onload = function(){
         //hide the preloader
         document.querySelector(".preloader").style.display = "none";
-    }
-    
-    // Scrool Function
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("header-mid").style.display = "fixed";
-        document.getElementById("header-mid").style.boxShadow = "0 2px 2px 2px rgba(0, 0, 0, 0.1)";
-        document.getElementById("header-mid").style.height = "100px";
-        document.getElementById("nav-logo-img").style.width = "60px";
-        document.getElementById("ustalar").style.display = "none";
-        document.getElementById("header-mid").style.top = "0";
-    } else {
-        document.getElementById("header-mid").style.height = "max-content";
-        document.getElementById("header-mid").style.boxShadow = "none";
-        document.getElementById("ustalar").style.display = "block";
-        document.getElementById("header-mid").style.top = " 50px";
-    }
     }
 </script>
 <!-- PreLoader Jquery -->
