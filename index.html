@@ -14,6 +14,7 @@
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <!-- Fancy Box -->    
     <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!-- Bootstrap -->
     <!-- Font Awasome -->
@@ -26,6 +27,10 @@
     <link rel="stylesheet" href="/owl.carousel.min.css">
     <link rel="stylesheet" href="/owl.theme.default.min.css">
     <!-- Owl Carousel -->    
+    <!-- IonIcons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- IonIcons -->
     <title>Sobsan Boya - Azərbaycanın ilk lak-boya istehsalı müəssisəsi</title>
 </head>
 <body>
@@ -63,9 +68,9 @@
                 </div>
                 <div class="header-right d-flex col-xl-6 col-lg-12">
                     <div class="header-social">
-                        <a href="https://www.facebook.com/sobsanofficial"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/sobsan_paints/"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/channel/UCXaXh-dXGaMp7E5_MBv3hmA"><i class="fa fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/sobsanofficial"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/sobsan_paints/"><ion-icon  name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.youtube.com/channel/UCXaXh-dXGaMp7E5_MBv3hmA"><ion-icon name="logo-youtube"></ion-icon></a>
                     </div>
                     <div id="header-pages" class="header-pages">
                         <a href="/HTML/compare.html"><img src="/images/icons/compare.svg" alt=""></a>
@@ -76,15 +81,13 @@
                         </span>
                         <span>
                             <!-- Az <i class="fa-solid fa-angle-down"></i> -->
-                            <details>
-                                <summary> <div> Az</div></summary>
-                                <p>
-                                    EN
-                                </p>
-                                <p>
-                                    RU
-                                </p>
-                            </details>
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Az <ion-icon name="chevron-down-outline"></ion-icon></button>
+                                <div id="myDropdown" class="dropdown-content">
+                                  <a href="">En</a>
+                                  <a href="">Ru</a>
+                                </div>
+                              </div>
                         </span>
                         <a class="signin" href="/HTML/signin.html"><img style="margin-right: 5px;" src="/images/icons/signin.svg" alt="">Giriş</a>
                     </div>
@@ -108,7 +111,7 @@
                                 </ul>
                                 <ul>
                                     <h6>Solvent əsaslı boyalar</h6>
-                                    <li class="inline-mid-item">Sintetik boyalar <i class="fa fa-angle-right"></i>
+                                    <li class="inline-mid-item">Sintetik boyalar <ion-icon name="chevron-forward-outline"></ion-icon></i>
                                         <ul class="inline-mid-list"> 
                                             <li>Astarlar</li>
                                             <li>Son qat</li>
@@ -116,7 +119,7 @@
                                             <li>Tinerlər</li>
                                         </ul>
                                     </li>
-                                    <li class="inline-mid-item">Sellülozik boyalar <i class="fa fa-angle-right"></i>
+                                    <li class="inline-mid-item">Sellülozik boyalar <ion-icon name="chevron-forward-outline"></ion-icon></i>
                                         <ul class="inline-mid-list">
                                             <li>Astarlar</li>
                                             <li>Son qat</li>
@@ -124,14 +127,14 @@
                                             <li>Tinerlər</li>
                                         </ul>
                                     </li>
-                                    <li class="inline-mid-item">Poliuretan boyalar <i class="fa fa-angle-right"></i>
+                                    <li class="inline-mid-item">Poliuretan boyalar <ion-icon name="chevron-forward-outline"></ion-icon></i>
                                         <ul class="inline-mid-list">
                                             <li>Astarlar</li>
                                             <li>Son qat</li>
                                             <li>Tinerlər</li>
                                         </ul>
                                     </li>
-                                    <li class="inline-mid-item">Epoksi boyalar <i class="fa fa-angle-right"></i>
+                                    <li class="inline-mid-item">Epoksi boyalar <ion-icon name="chevron-forward-outline"></ion-icon></i>
                                         <ul class="inline-mid-list">
                                             <li>Astarlar</li>
                                             <li>Son qat</li>
@@ -694,9 +697,9 @@
             <div class="footer-logo col-xl-3 col-12">
                 <a href="/index.html"><img style="margin-bottom: 30px;" src="/images/logo.png" alt=""></a>
                 <div class="header-social footer-social">
-                    <a href="https://www.facebook.com/sobsanofficial"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/sobsan_paints/"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.youtube.com/channel/UCXaXh-dXGaMp7E5_MBv3hmA"><i class="fa fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/sobsanofficial"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.instagram.com/sobsan_paints/"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://www.youtube.com/channel/UCXaXh-dXGaMp7E5_MBv3hmA"><ion-icon name="logo-youtube"></ion-icon></a>
                 </div>
             </div>
             <div class="footer-list d-flex col-xl-9 col-12">
